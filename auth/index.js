@@ -18,18 +18,17 @@ const check = {
         console.log(decoded)
         if(decoded.id !== owner){
             throw new error("No puedes realizar esta accion", 401)
-            // throw new Error("No puedes realizar esta accion")
         }
     }
 }
 
 function getToken(auth){
     if(!auth){
-        throw new Error('No existe token')
+        throw new error("No existe token", 401)
     }
 
     if(auth.indexOf('Bearer ') === -1){
-        throw new Error('Formato invalido')
+        throw new error("Formato invalido", 401)
     }
 
     let token = auth.replace('Bearer ', '');
