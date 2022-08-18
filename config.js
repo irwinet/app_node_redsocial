@@ -4,5 +4,11 @@ module.exports = {
     },
     jwt: {
         secret: process.env.JWT_SECRET || 'secret'
+    },
+    mysql:{
+        host: process.env.MYSQL_HOST || 'remotemysql.com',
+        user: process.env.MYSQL_USER || 'rO6xJgqreS',
+        password: process.env.MYSQL_PASS || 'ySBqdS19CS',
+        database: process.env.MYSQL_DB || 'rO6xJgqreS',
     }
 }
