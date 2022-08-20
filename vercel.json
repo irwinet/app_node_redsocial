@@ -1,5 +1,11 @@
 {
     "version": 2,
+    "env": {
+        "MYSQL_HOST": "remotemysql.com",
+        "MYSQL_USER": "rO6xJgqreS",
+        "MYSQL_PASS": "ySBqdS19CS",
+        "MYSQL_DB": "rO6xJgqreS"
+    },
     "builds": [
         {
             "src": "api/index.js",
